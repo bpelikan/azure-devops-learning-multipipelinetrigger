@@ -1,11 +1,11 @@
 trigger: none
 
-# this is being defined in app-ci pipeline
-resources:
-  pipelines:
-  - pipeline: cd-pp
-    source: ci-pipeline
-    trigger: true
+# this is being defined in app-ci pipeline 
+resources: 
+    pipelines:
+    - pipeline: cd-pp
+      source: ci-pipeline
+      trigger: true
 
 pool:
   vmImage: 'ubuntu-18.04' #ubuntu-latest
